@@ -7,8 +7,8 @@ refletImage = loadImage("./assets/images/reflet.jpg");
 
 
 function setup() {
-   // createCanvas(refletImage.width *2, refletImage.height);
    createCanvas(refletImage.width, refletImage.height);
+   // createCanvas(refletImage.width, refletImage.height);
 
     background(0);
    //image(refletImage,0,0);
@@ -16,13 +16,12 @@ function setup() {
 
 function draw() {
    background(0);
-//copy(refletImage,mouseX,mouseY,100,100, mouseX + refletImage.width, mouseY,100,100);
 copy(refletImage,mouseX,mouseY,100,100, mouseX, mouseY,100,100);
 
- // image(refletImage,0,0);
-  // noFill();
-  // stroke(255,0,255);
-  // rect(mouseX,mouseY,100,100);
+ //image(refletImage,150,150);
+  //noFill();
+  //stroke(255,0,255);
+  //rect(mouseX,mouseY,100,100);
 
 }
 
@@ -45,3 +44,6 @@ Pistes d’exploration — choisissez une idée ou suivez la vôtre.
 - Dessinez avec des formes au clic ou au glisser.
 - Ajoutez deux états au sketch : un double-clic (doubleClicked()) pourrait faire passer de la photo aux formes.
 */
+
+
+// 
