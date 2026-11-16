@@ -7,30 +7,34 @@ refletImage = loadImage("./assets/images/reflet.jpg");
 
 
 function setup() {
-    createCanvas(refletImage.width *2, refletImage.height);
+   // createCanvas(refletImage.width *2, refletImage.height);
+   createCanvas(refletImage.width, refletImage.height);
+
     background(0);
-   // image(refletImage,0,0);
+   //image(refletImage,0,0);
 }
 
 function draw() {
-   // background(0);
-   // copy(refletImage,mouseX,mouseY,100,100, mouseX + refletImage.width, mouseY,100,100);
-   image(refletImage,0,0);
-   noFill();
-   stroke(255,0,255);
-   rect(mouseX,mouseY,100,100);
+   background(0);
+//copy(refletImage,mouseX,mouseY,100,100, mouseX + refletImage.width, mouseY,100,100);
+copy(refletImage,mouseX,mouseY,100,100, mouseX, mouseY,100,100);
+
+ // image(refletImage,0,0);
+  // noFill();
+  // stroke(255,0,255);
+  // rect(mouseX,mouseY,100,100);
 
 }
 
-function mouseDragged(){
-   // copy(refletImage,mouseX,mouseY,100,100, mouseX + refletImage.width, mouseY,100,100);
-   mousePressed();
-}
+// function mouseDragged(){
+//    // copy(refletImage,mouseX,mouseY,100,100, mouseX + refletImage.width, mouseY,100,100);
+//    mousePressed();
+// }
 
-function mousePressed(){
-    copy(refletImage,mouseX,mouseY,100,100, mouseX + refletImage.width, mouseY,100,100);
+// function mousePressed(){
+//     copy(refletImage,mouseX,mouseY,100,100, mouseX + refletImage.width, mouseY,100,100);
 
-    }
+//     }
 /*
 Pistes d’exploration — choisissez une idée ou suivez la vôtre.
 
