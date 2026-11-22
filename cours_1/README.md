@@ -98,3 +98,4 @@ Je garde VS Code et le navigateur côte à côte. À chaque essai, je change une
 1. **Essayer avant de modifier.** « Prenez deux minutes pour jouer avec le sketch. Qu’est-ce que vous aimeriez changer dans le geste ? Notez une piste dans votre journal. »
 2. **Choisir une modification.** Si quelqu’un cherche un départ : remplacer la photo, changer la taille des fragments ou imprimer une bande à partir d’un carré. Dès qu’une version vaut la peine d’être retrouvée, faire un commit. Exemple : « Imprimer des bandes au glisser ». Dans la description, dire pourquoi on garde cet essai.
 3. **Journal, puis push.** « Qu’avez-vous remarqué en essayant votre version ? Qu’est-ce que ça vous donne envie d’explorer ? » Garder une note ou une capture, faire un commit pour le journal, puis **Push origin**. Vérifier le sketch sur GitHub Pages. On regardera les essais au début du prochain cours.
+

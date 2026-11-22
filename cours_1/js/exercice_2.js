@@ -35,6 +35,8 @@ copy(refletImage,mouseX,mouseY,100,100, mouseX, mouseY,100,100);
 
 //     }
 /*
+
+
 Pistes d’exploration — choisissez une idée ou suivez la vôtre.
 
 - Changez la photo pour dessiner avec une image de votre choix.
