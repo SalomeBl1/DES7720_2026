@@ -1,6 +1,8 @@
 // DES7720 — EXERCICE 3 — Conditions, animations et sons
 let ellipsePosX;
 let ellipsePosY;
+let distanceMouseElipse;
+let vitesse;
 
 // roule 1 fois au début du script         
 function setup() {
@@ -15,21 +17,28 @@ ellipsePosY = height / 2;
 function draw() {
 background(50,150, 220);
 
+distanceMouseElipse = dist(mouseX, mouseY, ellipsePosX, ellipsePosY);
+
+console.log(distanceMouseElipse);
+
+vitesse = map(distanceMouseElipse, 0, width, 5, 0.001);
+
 if (mouseX > ellipsePosX) {
-    ellipsePosX = ellipsePosX - 1;
+    ellipsePosX = ellipsePosX - vitesse;
 
     }
 else if (mouseX < ellipsePosX) {
-    ellipsePosX = ellipsePosX + 1;
+    ellipsePosX = ellipsePosX + vitesse;
     }
 
     if (mouseY > ellipsePosY) {
-    ellipsePosY = ellipsePosY - 1;
+    ellipsePosY = ellipsePosY - vitesse;
 
     }
 else if (mouseY < ellipsePosY) {
-    ellipsePosY = ellipsePosY + 1;
+    ellipsePosY = ellipsePosY + vitesse;
     }
+
 
 // ellipsePosX = ellipsePosX + 1;
 // ellipsePosY = ellipsePosY + 1;
