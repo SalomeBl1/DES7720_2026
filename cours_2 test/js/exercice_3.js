@@ -81,7 +81,7 @@ background(50,150, 220);
   
   // Définit la zone de découpe en ellipse (centrée sur la souris)
   beginClip();
-  ellipse(mouseX, mouseY, 200, 200);
+  ellipse(doigtX, doigtY, 200, 200);
   endClip();
   
   // Dessine l'image (seule la partie dans l'ellipse sera visible)
