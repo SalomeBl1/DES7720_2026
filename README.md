@@ -28,20 +28,41 @@ Je voulais que le cercle blanc devienne l'image et soit révélée par l'interac
 
 Dans mon squetch final, le cercle est une révélation d'image et le pincement de la main ramène l'outil circulaire de révélation à la main. J'aime cette version alors je suis restée là dessus. 
 
-# Grande tirade 3 : Démarrage du projet 
+# Grande tirade 3 : Démarrage du projet et idéation
 23 novembre 2026
 
 Les exemples montrés en classe m'ont pas mal inspiré. Voici différentes idées que j'ai eu : 
 
-IDÉES
+IDÉES POUR MON PROJET
 
 - j'adore l'idée du gros bouton rouge danger où on a pas envie d'appuyer dessus au risque de ce que cela pourrait déclencher... Peut-être que le commun des mortels ne l'appuyra jamais!
 Peut-être qu'il y a un besoin d'avertir mais on a peur de déranger alors on ne l'appuira pas... Et si..... Appuyer sur le bouton te donne un bisou? 
-Attention danger d'affection! 
+Attention danger de recevoir de l'affection! 
 
 - j'adore aussi l'idée d'avoir un ordinateur anti-ordinateur. Le plus loin de l'écran, le mieux ça fonctionne. Exemple : à moins de 50sm - ERREUR 404. À moins de 1 M, ça disparait tranquillement pas vite. À plus de deux mètres tu accèdes enfin au desktop! Et là, il pourrait y avoir une mission à faire... ouvrir un dossier important avec le pied?
 
-- j'aime aussi l'idée d'explorer l'inverse des réseaux sociaux. Genre des images totalement random qui appraraissent à chaque interaction. Plus tu cliques plus tu t'expose à du contenu innatendu que tu ne veux pas nécéssairement voir. Cela explore 
+- j'aime aussi l'idée d'explorer l'inverse des réseaux sociaux. Genre des images totalement random qui appraraissent à chaque interaction. Plus tu cliques plus tu t'expose à du contenu innatendu que tu ne veux pas nécéssairement voir. Cela explore notre non-exposition à la variété de contenu et notre polarisation politique...
+
+- J'ai aussi pensé à une expérience ultra sensible adaptée seulement aux personnes miope ou seulement hyper-métrope. Inspiré de Formation Obligatoire dans le moment zoom et le partage de document, le zoom ultra sensible donne un texte soit trop gros soit trop petit. 
+
+- J'aime aussi beaucoup l'idée de dessiner avec le corps! Explorer la danse digitale...
+
+------
+
+j'ai full envie de développer l'idée du bouton danger d'affection et l'idée de Erreur de proximité de l'écran... COMMENT CHOISIR???
+
+-----
 
 J'ai duppliqué le dossier cours 2 test où j'ai réalisé ma combinaison révélation d'image + main + son. Celle-ci sera la base de test pour mon projet. 
 
+
+# Grande tirade 4 : Idéation autour du projet de ERREUR de proximité
+23 novembre 2026
+
+Squetch : 
+idée : if plus petit que 50cm alors ERREUR 404. if plus petit que 1M alors le dessin disparait peu à peu avec l'oppacité. if à plus de 2M alors desktop et souris apparaissent.
+
+Ressources :
+https://docs.ml5js.org/#/reference/depthestimation
+
+To be continued...
