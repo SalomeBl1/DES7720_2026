@@ -42,7 +42,6 @@ refletImage = loadImage("./assets/images/reflet.jpg");
 function setup() {
   
 createCanvas(refletImage.width, refletImage.height);
-    // background(0);
 
 // canvas = createCanvas(640, 640);
 
@@ -76,29 +75,14 @@ background(50,150, 220);
 //copy(refletImage,mouseX,mouseY,100,100, mouseX, mouseY,100,100);
 
 
-  // Sauvegarde l'état actuel du canvas
-  push(); 
-  
-  // Définit la zone de découpe en ellipse (centrée sur la souris)
-  beginClip();
-  ellipse(doigtX, doigtY, 200, 200);
-  endClip();
-  
-  // Dessine l'image (seule la partie dans l'ellipse sera visible)
-  image(refletImage, 0, 0); 
-  
-  // Restaure le canvas normal pour la suite du dessin
-  pop(); 
+
 
 
   distanceMouseElipse = dist(doigtX, doigtY, ellipsePosX, ellipsePosY);
 
-// console.log(distanceMouseElipse);
 
 vitesse = map(distanceMouseElipse, 0, width, 5, 0.001);
 
-// ellipsePosX = constrain (ellipsePosX, 100, width - 100);
-// ellipsePosY = constrain (ellipsePosY, 100, height - 100);
 
 if (doigtX > ellipsePosX) {
     ellipsePosX = ellipsePosX - vitesse;
@@ -118,19 +102,52 @@ else if (doigtY < ellipsePosY) {
 
 if (pince) {
 
-    ellipsePosX = lerp(ellipsePosX, doigtX, 0.2);
-    ellipsePosY = lerp(ellipsePosY, doigtY, 0.2);
+ellipsePosX = lerp(ellipsePosX, doigtX, 0.2);
+ellipsePosY = lerp(ellipsePosY, doigtY, 0.2);
+
+ push(); 
+  
+  // Définit la zone de découpe en ellipse (centrée sur la souris)
+  beginClip();
+
+  ellipse(doigtX, doigtY, 200, 200);
+
+  endClip();
+  
+  // Dessine l'image (seule la partie dans l'ellipse sera visible)
+  image(refletImage, 0, 0); 
+  
+  // Restaure le canvas normal pour la suite du dessin
+  pop(); 
+
+
 
     push();
     fill (255,0,0);
     rect(0,0,width,height);
     pop();
     }
+noFill();
 
-noStroke();
+ push(); 
+  
+  // Définit la zone de découpe en ellipse (centrée sur la souris)
+  beginClip();
+
+  ellipse(ellipsePosX, ellipsePosY, 200, 200);
+
+  endClip();
+  
+  // Dessine l'image (seule la partie dans l'ellipse sera visible)
+  image(refletImage, 0, 0); 
+  
+  // Restaure le canvas normal pour la suite du dessin
+  pop(); 
+// noStroke();
 // ellipsePosX = ellipsePosX + 1;
 // ellipsePosY = ellipsePosY + 1;
-ellipse(ellipsePosX, ellipsePosY, 200);
+
+// ellipse(ellipsePosX, ellipsePosY, 200);
 
 dessinerMain();
 
@@ -150,6 +167,9 @@ function mouseReleased() {
 
 
 function doigtPressed() {
+
+
+
     frequency = map(distanceMouseElipse, 0, width, 820, 60);
    osc.freq(frequency);
     enveloppe.play();
