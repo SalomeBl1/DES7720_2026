@@ -41,7 +41,7 @@ refletImage = loadImage("./assets/images/reflet.jpg");
 // roule 1 fois au début du script         
 function setup() {
   
-    createCanvas(refletImage.width, refletImage.height);
+createCanvas(refletImage.width, refletImage.height);
     // background(0);
 
 // canvas = createCanvas(640, 640);
@@ -73,10 +73,25 @@ osc.start();
 function draw() {
 
 background(50,150, 220);
-copy(refletImage,mouseX,mouseY,100,100, mouseX, mouseY,100,100);
-// background(50,150, 220);
+//copy(refletImage,mouseX,mouseY,100,100, mouseX, mouseY,100,100);
 
-distanceMouseElipse = dist(doigtX, doigtY, ellipsePosX, ellipsePosY);
+
+  // Sauvegarde l'état actuel du canvas
+  push(); 
+  
+  // Définit la zone de découpe en ellipse (centrée sur la souris)
+  beginClip();
+  ellipse(mouseX, mouseY, 200, 200);
+  endClip();
+  
+  // Dessine l'image (seule la partie dans l'ellipse sera visible)
+  image(refletImage, 0, 0); 
+  
+  // Restaure le canvas normal pour la suite du dessin
+  pop(); 
+
+
+  distanceMouseElipse = dist(doigtX, doigtY, ellipsePosX, ellipsePosY);
 
 // console.log(distanceMouseElipse);
 
